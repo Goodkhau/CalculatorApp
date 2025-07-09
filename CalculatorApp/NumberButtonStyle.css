@@ -1,1 +1,18 @@
-﻿
+﻿#calculatorBody {
+    width: 400px;
+    margin: auto;
+}
+
+#calculatorButtons {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#calculatorButtons button {
+    height: 0;
+    width: 90%;
+    padding-top: 40%;
+    padding-bottom: 47%;
+    margin: 5%;
+    border-radius: 50%;
+}

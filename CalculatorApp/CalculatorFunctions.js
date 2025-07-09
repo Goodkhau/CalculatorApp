@@ -1,2 +1,3 @@
-// JavaScript source code
-display('0')
+function display(input) {
+    console.log(input);
+}
