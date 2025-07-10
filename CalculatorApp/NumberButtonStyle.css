@@ -13,6 +13,9 @@
 
 .calculatorContents #calculatorDisplay {
     background-color: rgb(5,5,5);
+    text-align: right;
+    font-size: 3rem;
+    color: white;
     grid-column-start: 1;
     grid-column-end: 5;
     height: 200px;
