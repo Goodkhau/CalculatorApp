@@ -1,9 +1,9 @@
-﻿#calculatorBody {
+﻿.calculatorBody {
     width: 500px;
     margin: auto;
 }
 
-#calculatorContents {
+.calculatorContents {
     background-color: black;
     display: grid;
     padding: 4%;
@@ -11,14 +11,37 @@
     border-radius: 5%;
 }
 
-#calculatorContents button {
+.calculatorContents #calculatorDisplay {
+    background-color: rgb(5,5,5);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 200px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.calculatorContents button {
     background-color: rgb(50,50,50);
     font-size: 50px;
     color: white;
+    justify-content: center;
     height: 0;
     width: 80%;
-    padding-top: 24%;
-    padding-bottom: 53%;
+    padding-top: 16%;
+    padding-bottom: 62%;
     margin: 10%;
     border-radius: 50%;
+}
+
+.calculatorContents button.miscButton {
+    background-color: gray;
+}
+
+.calculatorContents button.operator {
+    background-color: lightgray;
+    color: black;
+}
+
+.calculatorContents button#submit {
+    background-color: lightgreen;
 }

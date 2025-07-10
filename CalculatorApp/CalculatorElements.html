@@ -8,27 +8,29 @@
     <script src="CalculatorFunctions.js"></script>
 </head>
 <body>
-    <div id="calculatorBody">
-        <div id="calculatorContents">
+    <div class="calculatorBody">
+        <div class="calculatorContents">
             <input id="calculatorDisplay" readonly>
-            <button onclick="display('0')">0</button>
-            <button onclick="display('1')">1</button>
-            <button onclick="display('2')">2</button>
-            <button onclick="display('3')">3</button>
-            <button onclick="display('4')">4</button>
-            <button onclick="display('5')">5</button>
-            <button onclick="display('6')">6</button>
+            <button onclick="clear('C')" class="miscButton">C</button>
+            <button onclick="removeChar()" class="miscButton">⌫</button>
+            <button onclick="display('%')" class="miscButton">%</button>
+            <button onclick="display('/')" class="operator">/</button>
             <button onclick="display('7')">7</button>
             <button onclick="display('8')">8</button>
             <button onclick="display('9')">9</button>
-            <button onclick="display('/')">/</button>
-            <button onclick="display('x')">x</button>
-            <button onclick="display('-')">-</button>
-            <button onclick="display('+')">+</button>
+            <button onclick="display('x')" class="operator">x</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('-')" class="operator">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('+')" class="operator">+</button>
+            <button onclick="negate()">+/-</button>
+            <button onclick="display('0')">0</button>
             <button onclick="display('.')">.</button>
-            <button onclick="display('√')">√</button>
-            <button onclick="display('C')">C</button>
-            <button onclick="display('=')">=</button>
+            <button onclick="calculate()" id="submit">=</button>
         </div>
     </div>
 </body>
